@@ -1,0 +1,30 @@
+### Create a book
+POST http://localhost:3000/createbook
+content-type: application/json
+
+{
+    "title": "Test2",
+    "author": "Mostafa",
+    "genre": "Fantasy",
+    "price": 50
+}
+
+
+### Update book with ID
+PUT http://localhost:3000/book/2
+Content-Type: application/json
+
+{
+  "title": "Updated Title",
+  "author": "Updated Author",
+  "genre": "Updated Genre",
+  "price": 99
+}
+
+
+### Get all books
+GET http://localhost:3000/books
+
+
+### Delete book with ID 2
+DELETE http://localhost:3000/book/2
